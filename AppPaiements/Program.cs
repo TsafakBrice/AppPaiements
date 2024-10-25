@@ -23,7 +23,16 @@ internal class Program
         PayPal compteB = new PayPal(courriel: "Romaintsaf@gmail.com", description: "compte cheque", montant: 4800);
 
         compteA.AfficherDetails();
-        compteB.AfficherDetails();  
+        compteB.AfficherDetails();
+
+
+        Utilissateur Brice = new Utilissateur("Brice");
+
+        Brice.AjouterPaiement(carteA);
+
+        Brice.AjouterPaiement(carteB);
+        Brice.AfficherInfos();
+
 
 
     }
