@@ -15,6 +15,17 @@ internal class Program
         carteA.AfficherDetails();
         carteB.AfficherDetails();
         carteC.AfficherDetails();
+
+        Console.WriteLine("........");
+
+        PayPal compteA = new PayPal(courriel: "Bricetsaf@gmail.com", description: "compte epargne", montant: 40000);
+
+        PayPal compteB = new PayPal(courriel: "Romaintsaf@gmail.com", description: "compte cheque", montant: 4800);
+
+        compteA.AfficherDetails();
+        compteB.AfficherDetails();  
+
+
     }
 }
 
